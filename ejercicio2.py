@@ -12,6 +12,4 @@ for numero in range(2, int(limite ** 0.5) + 1):
 
 primos = [i for i in range(2, limite + 1) if es_primo[i]]
 
-print("Números primos entre 1 y 1000:")
-print(primos)
-print("\nCantidad de números primos:", len(primos))
+print("Números primos entre 1 y 1000:",primos,"\nCantidad de números primos:", len(primos))

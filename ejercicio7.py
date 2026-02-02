@@ -6,8 +6,7 @@ intentos_maximos = 10
 intentos = 0
 adivinado = False
 
-print("He pensado un número entero entre 1 y 1000.")
-print("Tienes 10 intentos para adivinarlo.\n")
+print("He pensado un número entero entre 1 y 1000.""\nTienes 10 intentos para adivinarlo.\n")
 
 while intentos < intentos_maximos and not adivinado:
     intento = int(input(f"Intento {intentos + 1}: Ingresa un número: "))
