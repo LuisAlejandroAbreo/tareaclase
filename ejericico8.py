@@ -13,7 +13,7 @@ def estimar_pi(N):
     pi_aproximado = 4 * puntos_dentro / N
     return puntos_dentro, pi_aproximado
 
-N = random.randint(1, 10000)
+N = random.randint(1,10000)
 
 puntos_dentro, pi_estimado = estimar_pi(N)
 
