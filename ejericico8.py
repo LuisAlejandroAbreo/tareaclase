@@ -1,5 +1,20 @@
-num1 = 373
-num2 = 10
-num3 = num1 // num2
+import random
 
-print("División entera de", num1, "en", num2, "=", num3)
+def estimar_pi(N):
+    puntos_dentro = 0
+
+    for _ in range(N):
+        x = random.uniform(-1, 1)
+        y = random.uniform(-1, 1)
+
+        if x**2 + y**2 <= 1:
+            puntos_dentro += 1
+
+    pi_aproximado = 4 * puntos_dentro / N
+    return puntos_dentro, pi_aproximado
+
+N = int(input("Ingrese el número total de puntos NN: "))
+
+puntos_dentro, pi_estimado = estimar_pi(N)
+
+print("\nResultados de la simulación:"f"\nNúmero total de generados: {N}"f"\nNúmero de puntos dentro del círculo: {puntos_dentro}"f"\nValor aproximado de π: {pi_estimado}")
