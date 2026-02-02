@@ -1,8 +1,10 @@
-x = int(input("Ingrese el valor de x:"))
+import math
 
-n = 3
-e = 1+x+x*x/2 + x*x*x/3 + x*n/n
+x = float(input("Ingrese el valor de x: "))
+n = int(input("Ingrese el número de términos n: "))
 
-print (e)
+resultado = 0
+for i in range(n + 1):
+    resultado += (x ** i) / math.factorial(i)
 
-
+print(f"Aproximación de e {x} usando {n} términos: {resultado}")

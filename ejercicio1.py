@@ -4,7 +4,6 @@ M = int(input("Ingrese la cantidad de años: "))
 
 capital = C
 
-# Cálculo iterativo del interés compuesto
 for año in range(1, M + 1):
     capital += capital * (I / 100)
     print(f"Año {año}: capital = {capital:.2f}")

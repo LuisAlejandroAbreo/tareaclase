@@ -19,10 +19,7 @@ while True:
 
 if contador > 0:
     promedio = suma_sueldos / contador
-    print("\nEmpleado con mayor sueldo:")
-    print("Número de orden:", orden_mayor)
-    print("Mayor sueldo:", mayor_sueldo)
-    print("\nCantidad de sueldos ingresados:", contador)
-    print("Promedio de sueldos:", promedio)
+    print("\n***Empleado con mayor sueldo***""\nNúmero de orden:", orden_mayor,"\nMayor sueldo:", mayor_sueldo,
+        "\nCantidad de sueldos ingresados:", contador,"\nPromedio de sueldos:", promedio)
 else:
     print("No se ingresaron sueldos válidos.")
